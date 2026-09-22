@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXA MediTech | Medias CircuitFlex</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans">
+
+  <!-- Header -->
+  <header class="fixed top-0 w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center space-x-3">
+        <img src="logo.png" alt="NEXA MediTech Logo" class="h-10 w-auto">
+        <span class="text-xl font-bold tracking-wide">NEXA <span class="text-blue-500">MediTech</span></span>
+      </a>
+      <nav class="flex space-x-6 text-sm font-medium text-slate-300">
+        <a href="index.html" class="hover:text-blue-400 transition-colors">Inicio</a>
+        <a href="nosotros.html" class="hover:text-blue-400 transition-colors">Nosotros</a>
+        <a href="producto.html" class="text-blue-400 font-semibold">CircuitFlex</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+      
+      <!-- Visual de la Media -->
+      <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 text-center">
+        <img src="logo.png" alt="CircuitFlex" class="h-48 mx-auto mb-6 opacity-80">
+        <h2 class="text-2xl font-bold mb-2">Media Inteligente CircuitFlex</h2>
+        <p class="text-slate-400 text-sm">Compresión activa con tecnología de memoria de forma y módulo de control dinámico.</p>
+      </div>
+
+      <!-- Configuración del Pedido -->
+      <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+        <h1 class="text-3xl font-extrabold mb-2">Solicitar CircuitFlex</h1>
+        <p class="text-slate-400 mb-6 text-sm">Selecciona las especificaciones requeridas para tu solicitud de pedido.</p>
+
+        <form onsubmit="event.preventDefault(); alert('Solicitud registrada correctamente.');">
+          
+          <!-- Seleccionar Talla -->
+          <div class="mb-6">
+            <label class="block text-sm font-semibold text-slate-300 mb-3">Talla Requerida:</label>
+            <div class="flex flex-wrap gap-3">
+              <label class="cursor-pointer">
+                <input type="radio" name="talla" value="XS" class="peer hidden" required>
+                <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm peer-checked:bg-blue-600 peer-checked:border-blue-500 inline-block">XS</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="talla" value="S" class="peer hidden">
+                <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm peer-checked:bg-blue-600 peer-checked:border-blue-500 inline-block">S</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="talla" value="M" class="peer hidden">
+                <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm peer-checked:bg-blue-600 peer-checked:border-blue-500 inline-block">M</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="talla" value="L" class="peer hidden">
+                <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm peer-checked:bg-blue-600 peer-checked:border-blue-500 inline-block">L</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="talla" value="XL" class="peer hidden">
+                <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm peer-checked:bg-blue-600 peer-checked:border-blue-500 inline-block">XL</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Seleccionar Color -->
+          <div class="mb-6">
+            <label class="block text-sm font-semibold text-slate-300 mb-3">Color:</label>
+            <div class="grid grid-cols-2 gap-3">
+              <label class="cursor-pointer">
+                <input type="radio" name="color" value="Blanco" class="peer hidden" required>
+                <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm peer-checked:bg-blue-600 peer-checked:border-blue-500 block text-center">Blanco</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="color" value="Gris" class="peer hidden">
+                <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm peer-checked:bg-blue-600 peer-checked:border-blue-500 block text-center">Gris</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="color" value="Negro" class="peer hidden">
+                <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm peer-checked:bg-blue-600 peer-checked:border-blue-500 block text-center">Negro</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="color" value="Azul" class="peer hidden">
+                <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm peer-checked:bg-blue-600 peer-checked:border-blue-500 block text-center">Azul</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Datos de contacto para la solicitud -->
+          <div class="space-y-3 mb-6">
+            <input type="text" placeholder="Nombre completo" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-sm text-slate-100 focus:outline-none focus:border-blue-500" required>
+            <input type="email" placeholder="Correo electrónico" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-sm text-slate-100 focus:outline-none focus:border-blue-500" required>
+          </div>
+
+          <button type="submit" class="w-full py-3 bg-blue-600 hover:bg-blue-500 font-bold rounded-xl transition-all shadow-lg shadow-blue-500/20">
+            Realizar Pedido / Cotización
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

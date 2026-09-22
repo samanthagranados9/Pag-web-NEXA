@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXA MediTech | Inicio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased">
+
+  <!-- Navegación -->
+  <header class="fixed top-0 w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center space-x-3">
+        <img src="logo.png" alt="NEXA MediTech Logo" class="h-10 w-auto">
+        <span class="text-xl font-bold tracking-wide">NEXA <span class="text-blue-500">MediTech</span></span>
+      </a>
+      <nav class="flex space-x-6 text-sm font-medium text-slate-300">
+        <a href="index.html" class="text-blue-400 font-semibold">Inicio</a>
+        <a href="nosotros.html" class="hover:text-blue-400 transition-colors">Nosotros</a>
+        <a href="producto.html" class="hover:text-blue-400 transition-colors">CircuitFlex</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section: Logo, Slogan y Video -->
+  <section class="pt-32 pb-16 px-6 max-w-7xl mx-auto text-center">
+    <div class="flex justify-center mb-6">
+      <img src="logo.png" alt="NEXA MediTech" class="h-28 md:h-36 w-auto drop-shadow-lg">
+    </div>
+    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-4">
+      Innovación que <span class="text-blue-500">mueve tu salud</span>
+    </h1>
+    <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+      El futuro del bienestar e integración biotecnológica a tu alcance.
+    </p>
+
+    <!-- Video Promocional -->
+    <div class="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-slate-800 bg-slate-900">
+      <video class="w-full h-auto" controls autoplay muted loop poster="poster.jpg">
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta reproducción de video.
+      </video>
+    </div>
+  </section>
+
+  <!-- Presentación del Producto: CircuitFlex -->
+  <section class="py-16 px-6 bg-slate-900/50 border-y border-slate-800/60">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-blue-400 text-sm font-semibold uppercase tracking-wider">Producto Estrella</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6">CircuitFlex</h2>
+        <p class="text-slate-300 leading-relaxed mb-6">
+          Nuestra media inteligente de compresión activa está equipada con canales de compresión dinámica, aleación inteligente biointegrada y capacidad de transmisión de datos en tiempo real.
+        </p>
+        <a href="producto.html" class="inline-block px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold transition-all shadow-lg shadow-blue-500/20">
+          Ver detalles y solicitar talla
+        </a>
+      </div>
+      <div class="flex justify-center">
+        <div class="p-6 bg-slate-800/80 rounded-2xl border border-slate-700 max-w-md w-full">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Especificaciones Clave</h3>
+          <ul class="space-y-3 text-slate-300 text-sm">
+            <li class="flex items-center gap-2">✓ Aleación inteligente biointegrada</li>
+            <li class="flex items-center gap-2">✓ Canales de compresión dinámica</li>
+            <li class="flex items-center gap-2">✓ Flujo de datos en tiempo real</li>
+            <li class="flex items-center gap-2">✓ Control de pulsos integrado</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beneficios de la Media -->
+  <section class="py-20 px-6 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">Beneficios de CircuitFlex</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center font-bold text-xl mb-4">01</div>
+        <h3 class="text-xl font-semibold mb-2">Mejora de la Circulación</h3>
+        <p class="text-slate-400 text-sm">Favorece el retorno venoso y estimula el flujo sanguíneo de forma uniforme en las extremidades inferiores.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center font-bold text-xl mb-4">02</div>
+        <h3 class="text-xl font-semibold mb-2">Compresión Adaptativa</h3>
+        <p class="text-slate-400 text-sm">Ajuste gradual mediante tecnología de memoria de forma para mayor comodidad durante el uso prolongado.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center font-bold text-xl mb-4">03</div>
+        <h3 class="text-xl font-semibold mb-2">Monitoreo Inteligente</h3>
+        <p class="text-slate-400 text-sm">Procesa y transmite telemetría en tiempo real para un control efectivo del tratamiento.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <footer id="contacto" class="py-16 px-6 bg-slate-900 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Ponte en contacto con nosotros</h2>
+        <p class="text-slate-400 mb-6">¿Tienes dudas o deseas información corporativa? Escríbenos directamente o visítanos en nuestras redes.</p>
+        <div class="space-y-3 text-slate-300">
+          <p class="flex items-center gap-3">
+            <span class="font-semibold text-blue-400">Correo:</span> nexa.meditech@gmail.com
+          </p>
+          <p class="flex items-center gap-3">
+            <span class="font-semibold text-blue-400">Facebook:</span> @nexameditech
+          </p>
+          <p class="flex items-center gap-3">
+            <span class="font-semibold text-blue-400">Instagram:</span> @nexa.meditech
+          </p>
+        </div>
+      </div>
+      <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+        <form class="space-y-4" onsubmit="event.preventDefault(); alert('Mensaje enviado');">
+          <input type="text" placeholder="Tu Nombre" class="w-full px-4 py-3 bg-slate-900 border border-slate-800 rounded-xl text-slate-200 focus:outline-none focus:border-blue-500">
+          <input type="email" placeholder="Tu Correo Electrónico" class="w-full px-4 py-3 bg-slate-900 border border-slate-800 rounded-xl text-slate-200 focus:outline-none focus:border-blue-500">
+          <textarea placeholder="Tu Mensaje" rows="3" class="w-full px-4 py-3 bg-slate-900 border border-slate-800 rounded-xl text-slate-200 focus:outline-none focus:border-blue-500"></textarea>
+          <button type="submit" class="w-full py-3 bg-blue-600 hover:bg-blue-500 font-semibold rounded-xl transition-all">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
