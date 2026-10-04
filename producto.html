@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXA MediTech | Solicitud Institucional CircuitFlex</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans">
+
+  <!-- Header -->
+  <header class="fixed top-0 w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center space-x-3">
+        <img src="logo.png" alt="NEXA MediTech Logo" class="h-10 w-auto">
+        <span class="text-xl font-bold tracking-wide">NEXA <span class="text-blue-500">MediTech</span></span>
+      </a>
+      <nav class="flex space-x-6 text-sm font-medium text-slate-300">
+        <a href="index.html" class="hover:text-blue-400 transition-colors">Inicio</a>
+        <a href="nosotros.html" class="hover:text-blue-400 transition-colors">Nosotros</a>
+        <a href="producto.html" class="text-blue-400 font-semibold">CircuitFlex</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
+    
+    <!-- Advertencia Regulatoria / Seguridad -->
+    <div class="mb-10 p-4 bg-amber-500/10 border border-amber-500/30 rounded-xl text-amber-300 text-sm flex items-start gap-3">
+      <span class="font-bold text-lg">⚠️</span>
+      <div>
+        <strong class="font-semibold">Aviso de Uso Profesional:</strong> CircuitFlex es un dispositivo biomédico de compresión activa. Su distribución está restringida exclusivamente a centros hospitalarios, clínicas especializadas, personal médico acreditado e instituciones de salud para garantizar un uso seguro y supervisado.
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+      
+      <!-- Presentación Técnica -->
+      <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+        <img src="logo.png" alt="CircuitFlex" class="h-36 mx-auto mb-6 opacity-90">
+        <h2 class="text-2xl font-bold mb-3 text-center">Especificaciones del Sistema CircuitFlex</h2>
+        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+          Diseñado para su integración en protocolos de terapia vascular y fisioterapia supervisada. Permite la calibración individualizada según la prescripción médica.
+        </p>
+        <div class="space-y-3 text-xs text-slate-300 border-t border-slate-800 pt-4">
+          <p><strong>Módulo Electrónico:</strong> Basado en ESP32 con protocolo seguro de transmisión de datos.</p>
+          <p><strong>Actuadores:</strong> Microfilamentos de aleación Nitinol de alta durabilidad biocompatible.</p>
+          <p><strong>Variantes disponibles:</strong> Múltiples tallas e identificadores cromáticos para control de inventario en clínica.</p>
+        </div>
+      </div>
+
+      <!-- Formulario B2B de Pedido / Cotización -->
+      <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+        <h1 class="text-2xl font-extrabold mb-2">Solicitud de Lote / Demo Clínica</h1>
+        <p class="text-slate-400 mb-6 text-sm">Completa los datos de tu institución médica para coordinar una prueba técnica o cotización por volumen.</p>
+
+        <form onsubmit="event.preventDefault(); alert('Solicitud institucional enviada. Un especialista de NEXA MediTech se pondrá en contacto.');">
+          
+          <!-- Datos Institucionales -->
+          <div class="space-y-3 mb-6">
+            <input type="text" placeholder="Nombre de la Institución / Hospital / Clínica" class="w-full px-4 py-2.5 bg-slate-800 border border-slate-700 rounded-xl text-sm text-slate-100 focus:outline-none focus:border-blue-500" required>
+            <div class="grid grid-cols-2 gap-3">
+              <input type="text" placeholder="Nombre del Solicitante" class="w-full px-4 py-2.5 bg-slate-800 border border-slate-700 rounded-xl text-sm text-slate-100 focus:outline-none focus:border-blue-500" required>
+              <input type="text" placeholder="Cargo / Especialidad" class="w-full px-4 py-2.5 bg-slate-800 border border-slate-700 rounded-xl text-sm text-slate-100 focus:outline-none focus:border-blue-500" required>
+            </div>
+            <input type="email" placeholder="Correo electrónico profesional" class="w-full px-4 py-2.5 bg-slate-800 border border-slate-700 rounded-xl text-sm text-slate-100 focus:outline-none focus:border-blue-500" required>
+          </div>
+
+          <!-- Seleccionar Talla Predominante / Tallas requeridas -->
+          <div class="mb-6">
+            <label class="block text-sm font-semibold text-slate-300 mb-2">Talla Requerida para Muestra / Cotización:</label>
+            <div class="flex flex-wrap gap-2">
+              <label class="cursor-pointer">
+                <input type="radio" name="talla" value="XS" class="peer hidden" required>
+                <span class="px-3.5 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-xs peer-checked:bg-blue-600 peer-checked:border-blue-500 inline-block">XS</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="talla" value="S" class="peer hidden">
+                <span class="px-3.5 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-xs peer-checked:bg-blue-600 peer-checked:border-blue-500 inline-block">S</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="talla" value="M" class="peer hidden">
+                <span class="px-3.5 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-xs peer-checked:bg-blue-600 peer-checked:border-blue-500 inline-block">M</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="talla" value="L" class="peer hidden">
+                <span class="px-3.5 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-xs peer-checked:bg-blue-600 peer-checked:border-blue-500 inline-block">L</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="talla" value="XL" class="peer hidden">
+                <span class="px-3.5 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-xs peer-checked:bg-blue-600 peer-checked:border-blue-500 inline-block">XL</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Seleccionar Color -->
+          <div class="mb-6">
+            <label class="block text-sm font-semibold text-slate-300 mb-2">Color Preferente:</label>
+            <div class="grid grid-cols-2 gap-2">
+              <label class="cursor-pointer">
+                <input type="radio" name="color" value="Blanco" class="peer hidden" required>
+                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-xs peer-checked:bg-blue-600 peer-checked:border-blue-500 block text-center">Blanco</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="color" value="Gris" class="peer hidden">
+                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-xs peer-checked:bg-blue-600 peer-checked:border-blue-500 block text-center">Gris</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="color" value="Negro" class="peer hidden">
+                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-xs peer-checked:bg-blue-600 peer-checked:border-blue-500 block text-center">Negro</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="color" value="Azul" class="peer hidden">
+                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-xs peer-checked:bg-blue-600 peer-checked:border-blue-500 block text-center">Azul</span>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="w-full py-3 bg-blue-600 hover:bg-blue-500 font-bold rounded-xl transition-all shadow-lg shadow-blue-500/20">
+            Solicitar Información / Cotización Institucional
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
